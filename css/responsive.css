@@ -1,0 +1,146 @@
+/* handphone responsive */
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .list-item {
+    position: absolute;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f6ff;
+    left: -1000px;
+    top: 4.3rem;
+    transition: left 0.5s ease-out;
+  }
+
+  .list-item.active {
+    left: 0;
+  }
+
+  .item {
+    margin-bottom: 0.6rem;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  /* about */
+  .about-section {
+    width: 100%;
+  }
+
+  .content-about {
+    flex-direction: column;
+  }
+
+  .about-img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .about-img img {
+    height: min-content;
+    border-radius: 13px;
+    box-shadow: 0 4px 64px rgba(0, 0, 0, 10%);
+  }
+
+  .about h2 {
+    font-size: 1.6em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-navbar h2 {
+    font-size: 1em;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .nama h2 {
+    font-size: 2em;
+  }
+
+  .nama h4 {
+    font-size: 1.4em;
+  }
+
+  .container-media {
+    margin: 1rem 0;
+  }
+
+  .main .nama {
+    order: 2;
+    text-align: center;
+  }
+
+  .about-section {
+    padding: 10px;
+  }
+
+  /* project */
+  .project {
+    width: 80%;
+  }
+}
+
+/* untuk membenarkan peta lokasi kerja  */
+@media screen and (max-width: 900px) {
+  .container-contact {
+    padding: 10px;
+  }
+
+  .content-contact {
+    flex-direction: column;
+  }
+
+  .container-contact .peta-kerja {
+    width: 100%;
+  }
+
+  .form-contact {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  #form input {
+    width: 100%;
+  }
+
+  #form textarea {
+    display: block;
+    width: 90%;
+  }
+}
+
+/* untuk hp dengan lebar 320 dan membetulkan navbar pada lebar */
+@media screen and (max-width: 320px) {
+  .list-item {
+    top: 6.5rem;
+  }
+  .about-section {
+    padding: 0;
+  }
+
+  .about-img {
+    margin: 0;
+  }
+}
