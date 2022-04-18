@@ -5,3 +5,5 @@ hamburger.addEventListener('click', function () {
   getListItem.classList.toggle('active');
   hamburger.classList.toggle('active');
 });
+
+const getForm = document.getElementById('form');
