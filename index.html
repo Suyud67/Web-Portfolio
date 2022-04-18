@@ -138,7 +138,7 @@
           ></iframe>
         </div>
         <div class="form-contact">
-          <form action="#" id="form" name="contact" data-netlify="true">
+          <form action="#" method="post" id="form" name="contact" data-netlify="true">
             <div class="nama">
               <label for="nama">Nama</label>
               <input type="text" name="nama" id="nama" placeholder="your name" />
@@ -151,12 +151,14 @@
               <label for="comment">Pesan</label>
               <textarea name="comment" id="comment" cols="30" rows="4" placeholder="Let's meet some day"></textarea>
             </div>
-            <button type="submit" class="submit">Submit</button>
+            <button type="submit" class="submit" onclick="swal('Terimakasih!', 'Akan aku cek segera :)', 'success')">Submit</button>
           </form>
         </div>
       </div>
     </div>
     <!-- akhir contact -->
+
+    <input type="hidden" name="contact" value="contact" />
 
     <!-- footer -->
     <footer>
